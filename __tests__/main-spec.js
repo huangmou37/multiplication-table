@@ -15,3 +15,7 @@ it ('should return true when validate input given 1000,1000', () => {
 it ('should return false when validate input given -1,1', () => {
     expect(main.isValidInput(-1, 1)).toBe(false);
 });
+
+it ('should return false when validate input given 1,1001', () => {
+    expect(main.isValidInput(1, 1001)).toBe(false);
+});
