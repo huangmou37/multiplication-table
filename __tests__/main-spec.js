@@ -51,3 +51,7 @@ it ('should return correct multiply table when create multiply table given 1,1',
 it ('should return correct multiply table when create multiply table given 1000,1000', () => {
     expect(main.createMultiplyTable(1000, 1000)).toEqual('1000×1000=1000000');
 });
+
+it ('should return correct multiply table when create multiply table given 1,2', () => {
+    expect(main.createMultiplyTable(1, 2)).toEqual('1×1=1\n1×2=2 2×2=4');
+});
