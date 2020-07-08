@@ -27,3 +27,9 @@ it ('should return false when validate input given 1,1001', () => {
 it ('should return 2×3=6 when create multiply item given 2,3', () => {
     expect(main.createMultiplyItem(2, 3)).toBe('2×3=6');
 });
+
+//  test case of createMultiply2DArray
+
+it ('should return correct 2D array when create multiply 2D array given 1,1', () => {
+    expect(main.createMultiply2DArray(1, 1)).toEqual([['1×1=1']]);
+});
