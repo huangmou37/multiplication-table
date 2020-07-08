@@ -1,0 +1,65 @@
+# test cases of createMultipleTable
+
+given: 1,1
+when: createMultipleTable
+then: return "1x1=1"
+
+given: 1000,1000
+when: createMultipleTable
+then: return "1000*1000=1000000"
+
+given: 1,2
+when: createMultipleTable
+then: return "1x1=1\n1x2=2 2x2=2"
+
+given: -1,1
+when: createMultipleTable
+then: return null
+
+# test cases of createMultiply2DArray
+
+given: 1,1
+when: createMultiply2DArray
+then: return [["1x1=1"]]
+
+given: 2,4
+when: createMultiply2DArray
+then: return [["2x2=4"],["2x3=6", "3x3=9"],["2x4=8", "3x4=12", "4x4=16"]]
+
+# test cases of generateMultipleTable
+
+given: [["1x1=1"]]
+when: generateMultipleTable
+then: return "1x1=1"
+
+given: [["2x2=4"],["2x3=6", "3x3=9"],["2x4=8", "3x4=12", "4x4=16"]]
+when: generateMultipleTable
+then: return "2x2=4\n2x3=6 3x3=9\n2x4=8 3x4=12 4x4=16"
+
+# test cases of createMultiplyItem
+
+given: 2,3
+when: createMultiplyItem
+then: return "2x3=6"
+
+# test cases of isValidInput
+
+given: 1, 1
+when: isValidInput
+then: true
+
+given: 1, 2
+when: isValidInput
+then: true
+
+given: 1000, 1000
+when: isValidInput
+then: true
+
+given: -1,1
+when: isValidInput
+then: false
+
+given: 1,1001
+when: isValidInput
+then: false
