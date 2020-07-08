@@ -1,4 +1,8 @@
 function createMultiplyTable(start, end) {
+  if (!isValidInput(start, end)) {
+    return null;
+  }
+
   let multiply2DArray = createMultiply2DArray(start, end);
   return multiply2DArray.map(row => row.join(' ')).join('\n');
 }
