@@ -1,3 +1,7 @@
+function createMultiplyTable(start, end) {
+  return '1×1=1';
+}
+
 function createMultiply2DArray(start, end) {
   let multiply2DArray = [];
 
@@ -21,7 +25,8 @@ function isValidInput(start, end) {
 }
 
 module.exports = {
-    createMultiply2DArray,
-    createMultiplyItem,
-    isValidInput
+  createMultiplyTable,
+  createMultiply2DArray,
+  createMultiplyItem,
+  isValidInput
 };

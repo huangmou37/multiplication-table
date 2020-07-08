@@ -41,3 +41,9 @@ it ('should return correct 2D array when create multiply 2D array given 2,4', ()
         ['2×4=8','3×4=12','4×4=16']
     ]);
 });
+
+// test case of createMultiplyTable
+
+it ('should return correct multiply table when create multiply table given 1,1', () => {
+    expect(main.createMultiplyTable(1, 1)).toEqual('1×1=1');
+});
