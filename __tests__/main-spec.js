@@ -47,3 +47,7 @@ it ('should return correct 2D array when create multiply 2D array given 2,4', ()
 it ('should return correct multiply table when create multiply table given 1,1', () => {
     expect(main.createMultiplyTable(1, 1)).toEqual('1×1=1');
 });
+
+it ('should return correct multiply table when create multiply table given 1000,1000', () => {
+    expect(main.createMultiplyTable(1000, 1000)).toEqual('1000×1000=1000000');
+});

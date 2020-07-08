@@ -1,5 +1,6 @@
 function createMultiplyTable(start, end) {
-  return '1×1=1';
+  let multiply2DArray = createMultiply2DArray(start, end);
+  return multiply2DArray.map(row => row.join(' ')).join('\n');
 }
 
 function createMultiply2DArray(start, end) {
