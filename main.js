@@ -1,5 +1,15 @@
 function createMultiply2DArray(start, end) {
-  return [['1×1=1']];
+  let multiply2DArray = [];
+
+  for (let i = start; i <= end; i++) {
+    let row = [];
+    for (let j = start; j <= i; j++) {
+      row.push(createMultiplyItem(j, i));
+    }
+    multiply2DArray.push(row);
+  }
+
+  return multiply2DArray;
 }
 
 function createMultiplyItem(left, right) {

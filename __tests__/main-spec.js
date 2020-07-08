@@ -33,3 +33,11 @@ it ('should return 2×3=6 when create multiply item given 2,3', () => {
 it ('should return correct 2D array when create multiply 2D array given 1,1', () => {
     expect(main.createMultiply2DArray(1, 1)).toEqual([['1×1=1']]);
 });
+
+it ('should return correct 2D array when create multiply 2D array given 2,4', () => {
+    expect(main.createMultiply2DArray(2, 4)).toEqual([
+        ['2×2=4'],
+        ['2×3=6','3×3=9'],
+        ['2×4=8','3×4=12','4×4=16']
+    ]);
+});
